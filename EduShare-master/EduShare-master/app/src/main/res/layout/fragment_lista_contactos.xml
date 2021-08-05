@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ListaContactos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloListaAmigos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Lista de Amigos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="636dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="60dp">
+
+                <ListView
+                    android:id="@+id/listadoAmigos"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InfoGrupo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloClaseInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Información de Grupo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblNombreInfo"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nombre de la Clase:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtNombreInfo"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Clase"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblCodigoInfo"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="Código de la Clase:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtCodigoInfo"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Código"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblAdminInfo"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="5dp"
+                android:text="Administrador:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imgAdmin"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/app_name"
+                tools:srcCompat="@drawable/img_default" />
+
+            <TextView
+                android:id="@+id/txtCateNombreInfo"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-75dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:text="Nombre"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtCorreoInfo"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-17dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Correo"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTelInfo"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Telefono"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblIntegrantesInfo"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="Integrantes:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="636dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="60dp">
+
+                <ListView
+                    android:id="@+id/listadoAlumnos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

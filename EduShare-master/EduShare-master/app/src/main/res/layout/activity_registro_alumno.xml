@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroAlumno">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/RegistroViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/RegAluFoto"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="66dp"
+                tools:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+            <Button
+                android:id="@+id/btnTakeFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="Tomar Foto" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos Personales"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/RegAluCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Numero de Cuenta"/>
+
+            <EditText
+                android:id="@+id/RegAluIdentidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Numero de identidad"/>
+
+            <EditText
+                android:id="@+id/RegAluNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Nombres"/>
+
+            <EditText
+                android:id="@+id/RegAluApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Apellidos"/>
+
+            <EditText
+                android:id="@+id/RegAluTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Telefono"/>
+
+            <EditText
+                android:id="@+id/RegAluFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Fecha Nacimiento"
+                android:inputType="text"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/RegAluDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Direccion"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Carrera" />
+
+            <Spinner
+                android:id="@+id/RegAluCarreras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/primary"
+                android:backgroundTintMode="add"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Campus" />
+
+            <Spinner
+                android:id="@+id/RegAluCampus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:backgroundTintMode="add"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:spinnerMode="dialog"/>
+
+            <EditText
+                android:id="@+id/RegAluCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Correo Electronico"/>
+
+            <EditText
+                android:id="@+id/RegAluPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Password"/>
+
+            <EditText
+                android:id="@+id/RegAluConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Confirmar Password"/>
+
+            <Button
+                android:id="@+id/btnRegAlumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="@color/primary"
+                android:text="Registrarme"
+                android:layout_marginBottom="60dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

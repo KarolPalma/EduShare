@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerContacto">
+
+    <ScrollView
+        android:layout_width="416dp"
+        android:layout_height="731dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloInfoAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Información del Compañero"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imgAmigo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="110dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/lblNombreAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nombre Amigo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblTelefonoAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Telefono Amigo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblCarreraAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Carrera Amigo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblCampusAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Campus Amigo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblCorreoAmigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Correo Amigo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnEliminarAmigo"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:layout_width="67dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="75dp" />
+
+            <TextView
+                android:id="@+id/lblNombreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-271dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nombre:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTelefonoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Teléfono:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCarreraA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Carrera:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCampusA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Campus:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCorreoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Correo:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

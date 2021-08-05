@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeleccionarRegistro">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:elevation="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Tipo de registro"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="34sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/secondary">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/studens" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/activity_vertical_margin"
+                android:text="Estudiante"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btnRegAluOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarme"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/primary"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/secondary">
+
+            <ImageView
+                android:id="@+id/teacher"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/teacher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teachertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maestro"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="48sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnRegCatOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarme"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/primary"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
