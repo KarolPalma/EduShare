@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileUpload">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:text="Seleccione un archivo a cargar"
+                android:textAlignment="center"
+                android:textColor="@color/notificacion"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Grupo"
+                android:textAlignment="textStart"
+                android:textColor="@color/notificacion"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerGruposFile"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="30dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner_background" />
+
+            <Button
+                android:id="@+id/btnSelectFile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:text="Seleccionar archivo" />
+
+            <TextView
+                android:id="@+id/txtFileSelected"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:text="No hay archivo seleccionado"
+                android:textAlignment="center"
+                android:textColor="@color/notificacion"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtFileSize"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/notificacion"
+                android:textSize="16sp" />
+
+
+            <ImageButton
+                android:id="@+id/btnLoadFile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/upload"
+                android:padding="5dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

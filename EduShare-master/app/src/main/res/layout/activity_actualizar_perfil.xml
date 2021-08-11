@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarPerfil">
+
+    <ScrollView
+        android:layout_width="416dp"
+        android:layout_height="731dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloUpdatePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Actualizar Perfil"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imgActualizar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="110dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnActualizarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="100dp"
+                android:backgroundTint="@color/primary"
+                android:text="Actualizar Foto" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Datos Personales"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/lblCuentaAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cuenta:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCuentaActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-34dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cuenta Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblIdentidadActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Identidad Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblIdentidadAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Identidad:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblACorreoctualizar"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Correo Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblCorreoAc"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Correo:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lblNombreActualizar"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Ingrese los Nombres"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblNombreAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nombres:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblApellidosAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Apellidos:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lblApellidoActualizar"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Ingrese los Apellidos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/lblTelefonoActualizar"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Ingrese el Teléfono"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblTelefonoAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginBottom="10dp"
+                android:text="Teléfono:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lblFechaActualizar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="AA/MM/DD"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblFechaAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Fecha Nacimiento:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lblDireccionActualizar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Ingrese la Dirección"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblDireccionAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Dirección:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCampusAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Campus:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCampusActualizar"
+                android:layout_width="163dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Campus Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/lblCarreraAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Carrera:"
+                android:textColor="#100E0E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblCarreraActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Carrera Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/btnActualizarInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="100dp"
+                android:backgroundTint="@color/primary"
+                android:text="Actualizar Información" />
+
+            <TextView
+                android:id="@+id/txtRecuperarClavePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:clickable="true"
+                android:onClick="RecuperarClave"
+                android:text="Recuperar mi contraseña"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/notificacion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnActualizarInfo" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
